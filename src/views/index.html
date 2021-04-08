@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../public/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Subir 1archivo</h1>
+    <div class="card">
+        <form action="/files" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="nombre">Titulo de la guía</label><br>
+                <input type="text" name="nombre" id="nombre"><br>
+                <label for="file">Guía</label><br>
+                <input type="file" name="avatar" id="file"><br>
+                <label for="descripcion">Descripción</label><br>
+                <input type="text" name="descripcion" id="descripcion"><br>
+                <button class="btn">Enviar</button>
+            </div>
+        </form>
+    </div>
+    <h1>Subir varios archivos</h1>
+    <form action="/multifile" method="post" enctype="multipart/form-data">
+        <input type="file" name="foto" id="">
+        <input type="file" name="archivos" id="" multiple>
+        <input type="submit" value="Subir archivo">
+    </form>
+</body>
+
+</html>

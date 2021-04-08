@@ -1,0 +1,16 @@
+body {
+    background: red;
+}
+
+h1 {
+    color: red;
+}
+
+.card form {
+    width: 25em;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: .5em;
+    margin: 1em;
+    box-shadow: 10px 10px 10px #ccc;
+}
